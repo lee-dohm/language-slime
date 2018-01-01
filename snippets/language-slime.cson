@@ -1,0 +1,144 @@
+".text.slime":
+  "HTML 5":
+    prefix: "doctype"
+    body: "doctype 5"
+  "XHTML 1.0 Strict":
+    prefix: "doctype"
+    body: "doctype strict"
+  "XHTML 1.0 Transitional":
+    prefix: "doctype"
+    body: "doctype transitional"
+  "XHTML 1.1":
+    prefix: "doctype"
+    body: "doctype 1.1"
+  "a href=\"\"":
+    prefix: "a"
+    body: "a href=\"${1:/}\"$0"
+  blockquote:
+    prefix: "blockquote"
+    body: "blockquote"
+  emphasized:
+    prefix: "em"
+    body: "em $0"
+  "filter (css)":
+    prefix: "css:"
+    body: '''
+      css:
+      	$0
+    '''
+  "filter (eex)":
+    prefix: "eex:"
+    body: '''
+      eex:
+      	$0
+    '''
+  "filter (elixir)":
+    prefix: "elixir:"
+    body: '''
+      elixir:
+      	$0
+    '''
+  "filter (javascript)":
+    prefix: "js:"
+    body: '''
+      javascript:
+      	$0
+    '''
+  h1:
+    prefix: "h"
+    body: '''
+      h1 ${1:Heading Level 1}
+      $0
+    '''
+  h2:
+    prefix: "h"
+    body: '''
+      h2 ${1:Heading Level 2}
+      $0
+    '''
+  h3:
+    prefix: "h"
+    body: '''
+      h3 ${1:Heading Level 3}
+      $0
+    '''
+  h4:
+    prefix: "h"
+    body: '''
+      h4 ${1:Heading Level 4}
+      $0
+    '''
+  h5:
+    prefix: "h"
+    body: '''
+      h5 ${1:Heading Level 5}
+      $0
+    '''
+  h6:
+    prefix: "h"
+    body: '''
+      h6 ${1:Heading Level 6}
+      $0
+    '''
+  ol:
+    prefix: "ol"
+    body: '''
+      ol${1:#${2:selector}}
+      	li ${3:Lorem ipsum dolor sit amet, consectetur adipisicing elit.}$0
+    '''
+  span:
+    prefix: "span"
+    body: "span $0"
+  strong:
+    prefix: "strong"
+    body: "strong $0"
+  "table (with thead)":
+    prefix: "tablethead"
+    body: '''
+      table
+      	thead
+      		tr
+      			th
+      			${1:Table Heading}
+      	tbody
+      		tr
+      			td
+      				${2:Table Data}
+    '''
+  "table (without thead)":
+    prefix: "table"
+    body: '''
+      table
+      	tr
+      		td
+      			${1:Table Data}
+    '''
+  tbody:
+    prefix: "tbody"
+    body: '''
+      tbody
+      	tr
+      		td
+      			${1:Table Data} $0
+    '''
+  thead:
+    prefix: "thead"
+    body: '''
+      thead
+      	tr
+      		th
+      			${1:Table Heading} $0
+    '''
+  tr:
+    prefix: "tr"
+    body: '''
+      tr
+      	${1:td}
+      		${2:Table Data} $0
+    '''
+  ul:
+    prefix: "ul"
+    body: '''
+      ul${1:#${2:selector}}
+      	li ${3:Lorem ipsum dolor sit amet, consectetur adipisicing elit.}$0
+    '''
